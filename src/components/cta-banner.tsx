@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 export default function CtaBanner() {
   return (
-    <section className="bg-navy py-20 md:py-28">
+    <section className="bg-navy py-14 md:py-20">
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

@@ -73,21 +73,21 @@ function CheckIcon() {
 
 export default function Services() {
   return (
-    <section id="services" className="bg-warm-white py-20 md:py-28">
+    <section id="services" className="bg-warm-white py-14 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-14"
+          className="flex items-baseline justify-between mb-10"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy">
             Three ways to work together.
           </h2>
-          <p className="mt-4 text-navy/65 max-w-xl mx-auto">
-            Whether you want a fast strategy session or a full build-out, there&apos;s an engagement designed for where you are right now.
-          </p>
+          <a href="#services" className="hidden md:inline text-sm font-semibold text-coral hover:text-coral/80 transition-colors whitespace-nowrap">
+            See Full Details &rarr;
+          </a>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 items-stretch">
@@ -100,7 +100,7 @@ export default function Services() {
               viewport={{ once: true }}
               variants={cardVariants}
               className={cn(
-                "bg-white rounded-2xl border p-8 flex flex-col gap-6",
+                "bg-white rounded-xl border p-6 flex flex-col gap-5",
                 s.accent,
                 s.featured ? "shadow-lg ring-1 ring-coral/20" : "shadow-sm"
               )}

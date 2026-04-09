@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-warm-white/90 backdrop-blur-md border-b border-navy/5">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         {/* Wordmark */}
         <a href="/" className="text-xl font-extrabold text-navy tracking-tight">
           Verge AI

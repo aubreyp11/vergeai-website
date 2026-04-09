@@ -37,19 +37,19 @@ const cardVariants: Variants = {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white py-20 md:py-28">
+    <section id="how-it-works" className="bg-white py-14 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-extrabold text-navy text-center mb-14 max-w-2xl mx-auto"
+          className="text-3xl md:text-4xl font-extrabold text-navy mb-10"
         >
           Three steps to AI that actually works for your business.
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10">
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
@@ -58,14 +58,14 @@ export default function HowItWorks() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="flex flex-col gap-5 p-8 rounded-2xl bg-warm-white"
+              className="flex flex-col gap-3"
             >
               <div
-                className={`${step.color} w-10 h-10 rounded-full flex items-center justify-center text-white font-extrabold text-base shrink-0`}
+                className={`${step.color} w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0`}
               >
                 {step.number}
               </div>
-              <h3 className="text-xl font-bold text-navy">{step.title}</h3>
+              <h3 className="text-lg font-bold text-navy">{step.title}</h3>
               <p className="text-navy/65 leading-relaxed text-sm">{step.description}</p>
             </motion.div>
           ))}

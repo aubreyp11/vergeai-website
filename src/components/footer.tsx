@@ -13,8 +13,8 @@ const connectLinks = [
 export default function Footer() {
   return (
     <footer className="bg-warm-white border-t border-navy/5">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-10">
           {/* Col 1: Wordmark + tagline */}
           <div className="flex flex-col gap-4">
             <p className="text-xl font-extrabold text-navy tracking-tight">Verge AI</p>
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-navy/8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-5 border-t border-navy/8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-navy/40">
             &copy; 2026 Verge AI. All rights reserved.
           </p>
