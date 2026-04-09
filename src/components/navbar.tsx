@@ -35,10 +35,7 @@ export default function Navbar() {
           ))}
           <a
             href="#quiz"
-            className={cn(
-              buttonVariants({ size: "default" }),
-              "bg-coral text-white hover:bg-coral/90 border-transparent rounded-lg px-5"
-            )}
+            className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors"
           >
             Take the Quiz
           </a>
@@ -89,10 +86,7 @@ export default function Navbar() {
               <a
                 href="#quiz"
                 onClick={() => setOpen(false)}
-                className={cn(
-                  buttonVariants({ size: "default" }),
-                  "bg-coral text-white hover:bg-coral/90 border-transparent rounded-lg px-5 self-start"
-                )}
+                className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors self-start"
               >
                 Take the Quiz
               </a>

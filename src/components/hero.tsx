@@ -27,22 +27,16 @@ export default function Hero() {
           <p className="text-lg text-navy/70 leading-relaxed max-w-lg">
             Verge AI helps small business owners cut through the noise and actually use AI to save time, grow revenue, and get back to the work that matters.
           </p>
-          <div className="flex flex-wrap gap-3 pt-1">
+          <div className="flex flex-wrap gap-4 pt-2">
             <a
               href="#quiz"
-              className={cn(
-                buttonVariants({ size: "default" }),
-                "bg-coral text-white hover:bg-coral/90 border-transparent rounded-lg px-5 py-2.5 text-sm h-auto"
-              )}
+              className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors"
             >
               Take the Free AI Readiness Quiz
             </a>
             <a
               href="#booking"
-              className={cn(
-                buttonVariants({ variant: "outline", size: "default" }),
-                "rounded-lg px-5 py-2.5 text-sm h-auto border-navy/30 text-navy hover:bg-navy/5"
-              )}
+              className="inline-flex items-center justify-center bg-warm-white/80 hover:bg-white text-navy font-semibold rounded-full px-8 py-4 text-base transition-colors"
             >
               Book a Discovery Call
             </a>

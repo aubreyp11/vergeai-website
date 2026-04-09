@@ -1,20 +1,27 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 
 export default function About() {
   return (
     <section id="about" className="bg-white py-14 md:py-20">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-        {/* Left: photo placeholder */}
+        {/* Left: photo */}
         <motion.div
           initial={{ opacity: 0, x: -32 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="aspect-[3/4] max-h-[400px] rounded-xl bg-gradient-to-br from-peach via-coral/20 to-teal/30 flex items-center justify-center"
+          className="relative aspect-[3/4] max-h-[400px] rounded-xl overflow-hidden"
         >
-          <p className="text-navy/40 text-sm font-medium">Photo coming soon</p>
+          <Image
+            src="/images/about-collaboration.jpg"
+            alt="Professional women collaborating around a laptop in a bright, modern co-working space"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </motion.div>
 
         {/* Right: copy */}

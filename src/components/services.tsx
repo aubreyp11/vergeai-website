@@ -124,10 +124,7 @@ export default function Services() {
               </ul>
               <a
                 href="#booking"
-                className={cn(
-                  buttonVariants({ size: "default" }),
-                  "bg-coral text-white hover:bg-coral/90 border-transparent rounded-lg w-full justify-center py-2.5 h-auto"
-                )}
+                className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full w-full py-3 text-sm transition-colors"
               >
                 Book a Discovery Call
               </a>

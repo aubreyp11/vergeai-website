@@ -23,10 +23,7 @@ export default function CtaBanner() {
           </p>
           <a
             href="#quiz"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "bg-coral text-white hover:bg-coral/90 border-transparent rounded-lg px-8 py-3 text-base h-auto mt-2"
-            )}
+            className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-10 py-4 text-base transition-colors mt-2"
           >
             Take the Quiz
           </a>
