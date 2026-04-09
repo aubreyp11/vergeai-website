@@ -1,10 +1,23 @@
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import HowItWorks from "@/components/how-it-works";
+import Services from "@/components/services";
+import About from "@/components/about";
+import CtaBanner from "@/components/cta-banner";
+import Footer from "@/components/footer";
+
 export default function Home() {
   return (
-    <main className="flex-1 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-extrabold text-navy mb-4">Verge AI</h1>
-        <p className="text-lg text-navy/70">Coming soon</p>
-      </div>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <HowItWorks />
+        <Services />
+        <About />
+        <CtaBanner />
+      </main>
+      <Footer />
+    </>
   );
 }
