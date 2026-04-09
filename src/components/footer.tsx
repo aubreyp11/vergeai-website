@@ -1,7 +1,7 @@
 const exploreLinks = [
   { label: "How it Works", href: "#how-it-works" },
   { label: "Services", href: "#services" },
-  { label: "The Quiz", href: "#quiz" },
+  { label: "AI Blueprint Quiz", href: "#quiz" },
 ]
 
 const connectLinks = [

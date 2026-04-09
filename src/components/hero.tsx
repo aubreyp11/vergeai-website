@@ -31,7 +31,7 @@ export default function Hero() {
               href="#quiz"
               className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors"
             >
-              Take the Free AI Readiness Quiz
+              Get Your Free AI Blueprint
             </a>
             <a
               href="https://calendar.app.google/F31ojRqwc1cqmE5L7"

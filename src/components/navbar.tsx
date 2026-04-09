@@ -37,7 +37,7 @@ export default function Navbar() {
             href="#quiz"
             className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors"
           >
-            Take the Quiz
+            Get Your Blueprint
           </a>
         </nav>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors self-start"
               >
-                Take the Quiz
+                Get Your Blueprint
               </a>
             </div>
           </motion.div>
