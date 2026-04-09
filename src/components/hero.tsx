@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <a
-              href="#quiz"
+              href="https://blueprintquiz.vergeai.co"
               className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors"
             >
               Get Your Free AI Blueprint

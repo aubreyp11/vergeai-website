@@ -32,7 +32,7 @@ export default function CtaBanner() {
               7 questions about your business, your team, and where things fall through the cracks. No fluff, no email required to start. You walk away knowing exactly where AI fits and what to do first.
             </p>
             <a
-              href="#quiz"
+              href="https://blueprintquiz.vergeai.co"
               className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-10 py-4 text-base transition-colors self-start"
             >
               Take the Quiz

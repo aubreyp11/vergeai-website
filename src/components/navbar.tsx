@@ -34,7 +34,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#quiz"
+            href="https://blueprintquiz.vergeai.co"
             className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors"
           >
             Get Your Blueprint
@@ -84,7 +84,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#quiz"
+                href="https://blueprintquiz.vergeai.co"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors self-start"
               >
