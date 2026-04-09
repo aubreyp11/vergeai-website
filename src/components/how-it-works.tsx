@@ -46,7 +46,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy mb-4">
-            From &ldquo;where do I start?&rdquo; to AI working for you.
+            Strategy first. Then the right tools. Then results.
           </h2>
           {/* Decorative divider */}
           <div className="flex items-center gap-2 mb-14">

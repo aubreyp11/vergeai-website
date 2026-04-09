@@ -45,7 +45,7 @@ export default function CtaBanner() {
               Free AI Blueprint Quiz
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
-              Stop guessing. Find out exactly where AI fits in your business.
+              Stop grabbing tools. Start with a strategy.
             </h2>
             <p className="text-white/70 leading-relaxed">
               Answer 7 quick questions about how you run your business. You&apos;ll get a custom AI profile, your biggest time-saving opportunities, and a prioritized action plan. Takes 2 minutes. No email required to start.

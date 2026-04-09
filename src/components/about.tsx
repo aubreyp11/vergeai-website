@@ -101,7 +101,7 @@ export default function About() {
             className="flex flex-col gap-4"
           >
             <p className="text-navy/65 leading-relaxed">
-              83% of growing small businesses have already adopted AI. The ones falling behind? They&apos;re still Googling &ldquo;best AI tools&rdquo; and signing up for free trials they never use. The difference isn&apos;t the tools. It&apos;s having someone who knows which ones actually matter for your business.
+              83% of growing small businesses have adopted AI. But most are using it without a strategy, signing up for tools they barely touch, solving the wrong problems first. The businesses pulling ahead aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
             </p>
             <div className="flex gap-10 pt-3 border-t border-navy/8">
               {credentials.map((c) => (

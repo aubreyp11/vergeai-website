@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.24, ease: "easeOut" }}
             className="text-lg text-navy/70 leading-relaxed max-w-xl"
           >
-            Most small business owners are stuck doing manually what AI could handle in minutes. Follow-ups, content, admin, lead research. We show you exactly which parts of your business AI can take off your plate, and how to make it happen.
+            Most small business owners are grabbing AI tools without a plan. The ones getting real results? They started with a strategy. We help you build one, so every AI decision ties back to saving time, cutting costs, or growing revenue.
           </motion.p>
 
           {/* CTAs */}
