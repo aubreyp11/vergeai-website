@@ -9,22 +9,22 @@ const credentials = [
 
 const differentiators = [
   {
-    icon: "🔧",
-    title: "I build what I recommend.",
+    icon: "🧭",
+    title: "I use AI to run my own business.",
     description:
-      "My own business runs on AI agents I built myself. Lead research, outreach, content. Every recommendation I give, I've already pressure-tested on my own time and money.",
+      "Lead research, outreach, content. My business runs on the same AI strategies I recommend to clients. Every piece of guidance comes from real experience, not theory.",
   },
   {
-    icon: "📋",
-    title: "Strategy and systems, not just slides.",
+    icon: "🗺️",
+    title: "A roadmap, not a sales pitch for tools.",
     description:
-      "Most consultants hand you a strategy doc and wish you luck. I architect the systems, build the automations, and make sure they actually work inside your business.",
+      "Most AI consultants push whatever tool they're partnered with. I start with your business goals and work backwards to find the right solutions, even if that means fewer tools, not more.",
   },
   {
     icon: "💬",
     title: "Business results, not tech jargon.",
     description:
-      "I don't lead with \"large language models.\" I lead with \"here's how you get three hours back every week\" and \"here's what that does to your revenue.\"",
+      "I don't lead with \"large language models.\" I lead with \"here's how you get three hours back every week\" and \"here's what that does to your bottom line.\"",
   },
 ]
 
@@ -65,7 +65,7 @@ export default function About() {
             className="flex flex-col gap-4"
           >
             <p className="text-navy/65 leading-relaxed">
-              75% of small businesses are investing in AI, but most are grabbing tools without a plan. They need someone who understands their world, not enterprise software repackaged with a smaller price tag.
+              75% of small businesses are investing in AI, but most are grabbing tools without a strategy. They need an advisor who understands their world, not enterprise consultants repackaged with a smaller price tag.
             </p>
             <div className="flex gap-10 pt-3 border-t border-navy/8">
               {credentials.map((c) => (

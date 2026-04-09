@@ -22,7 +22,7 @@ const steps = [
     title: "Deploy",
     color: "bg-teal",
     description:
-      "You get guidance to implement yourself, or we build it for you. Either way, you see results, not just a plan.",
+      "You walk away with a clear implementation plan and ongoing guidance to get it done. We stay in your corner until AI is actually working for you.",
   },
 ]
 

@@ -32,9 +32,9 @@ const services = [
     title: "Full AI Transformation Partnership",
     duration: "3-Month Minimum",
     features: [
-      "Custom AI solution build",
-      "Workflow automation setup",
-      "Full team training",
+      "Embedded AI strategy advisor",
+      "Vendor and tool selection guidance",
+      "Full team training and adoption",
     ],
     accent: "border-teal/20",
   },

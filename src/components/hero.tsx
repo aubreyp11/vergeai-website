@@ -25,7 +25,7 @@ export default function Hero() {
             AI isn&apos;t just for big companies anymore.
           </h1>
           <p className="text-lg text-navy/70 leading-relaxed max-w-lg">
-            You don&apos;t need a tech team to use AI. You need a strategist who builds real systems for businesses like yours. That&apos;s what we do.
+            You don&apos;t need a tech team to use AI. You need a strategist who knows exactly where it fits in your business and how to make it work. That&apos;s what we do.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a
