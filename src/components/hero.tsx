@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy leading-tight"
           >
-            AI isn&apos;t just for big companies anymore.
+            What if AI could give you 10 hours back every week?
           </motion.h1>
 
           {/* Body */}
@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.24, ease: "easeOut" }}
             className="text-lg text-navy/70 leading-relaxed max-w-xl"
           >
-            You don&apos;t need a tech team to use AI. You need a strategist who knows exactly where it fits in your business and how to make it work. That&apos;s what we do.
+            Most small business owners are stuck doing manually what AI could handle in minutes. Follow-ups, content, admin, lead research. We show you exactly which parts of your business AI can take off your plate, and how to make it happen.
           </motion.p>
 
           {/* CTAs */}
@@ -79,7 +79,7 @@ export default function Hero() {
               href="https://blueprintquiz.vergeai.co"
               className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors shadow-lg shadow-coral/20"
             >
-              Get Your Free AI Blueprint
+              See What AI Can Do for You
             </a>
             <a
               href="https://calendar.app.google/F31ojRqwc1cqmE5L7"

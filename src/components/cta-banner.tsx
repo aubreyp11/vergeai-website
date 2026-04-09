@@ -3,10 +3,10 @@
 import { motion, type Variants } from "framer-motion"
 
 const outcomes = [
-  "Your personalized AI profile based on your business type and stage",
-  "The specific areas where AI will save you the most time",
-  "Your recommended first AI win and where to start",
-  "A prioritized action plan you can use immediately",
+  "A custom AI profile based on your business type, team size, and stage",
+  "Your top 3 time drains that AI can handle starting this week",
+  "The one AI tool you should set up first (and why)",
+  "A prioritized action plan you can start on tomorrow",
 ]
 
 const itemVariants: Variants = {
@@ -45,10 +45,10 @@ export default function CtaBanner() {
               Free AI Blueprint Quiz
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
-              Get a personalized AI roadmap for your business in 2 minutes.
+              Stop guessing. Find out exactly where AI fits in your business.
             </h2>
             <p className="text-white/70 leading-relaxed">
-              7 questions about your business, your team, and where things fall through the cracks. No fluff, no email required to start. You walk away knowing exactly where AI fits and what to do first.
+              Answer 7 quick questions about how you run your business. You&apos;ll get a custom AI profile, your biggest time-saving opportunities, and a prioritized action plan. Takes 2 minutes. No email required to start.
             </p>
             <a
               href="https://blueprintquiz.vergeai.co"

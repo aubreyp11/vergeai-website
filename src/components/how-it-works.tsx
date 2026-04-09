@@ -8,21 +8,21 @@ const steps = [
     title: "Discover",
     borderColor: "border-l-navy",
     description:
-      "Take our free AI Readiness Quiz or book a call. In minutes, we identify where AI saves you the most time and money.",
+      "Take our 2-minute Blueprint Quiz or book a free call. You'll see exactly where AI fits in your business and what to prioritize first.",
   },
   {
     number: "02",
     title: "Design",
     borderColor: "border-l-coral",
     description:
-      "We build a custom AI roadmap around your goals, team size, and budget. Practical, specific, no fluff.",
+      "Together, we map your biggest time drains to specific AI solutions. Not a generic playbook. A roadmap built for your business, your team, your budget.",
   },
   {
     number: "03",
     title: "Deploy",
     borderColor: "border-l-teal",
     description:
-      "You walk away with a clear implementation plan and ongoing guidance to get it done. We stay in your corner until AI is actually working for you.",
+      "You walk away with a clear action plan and the support to execute it. We stay in your corner until you're seeing real results, not just talking about them.",
   },
 ]
 
@@ -46,7 +46,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy mb-4">
-            Three steps to AI that actually works for your business.
+            From &ldquo;where do I start?&rdquo; to AI working for you.
           </h2>
           {/* Decorative divider */}
           <div className="flex items-center gap-2 mb-14">

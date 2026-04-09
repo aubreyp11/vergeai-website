@@ -42,21 +42,21 @@ function GeoAccent({ variant }: { variant: "compass" | "map" | "chat" }) {
 const differentiators = [
   {
     geoVariant: "compass" as const,
-    title: "I use AI to run my own business.",
+    title: "I run my business on AI. You'll get what actually works.",
     description:
-      "Lead research, outreach, content. My business runs on the same AI strategies I recommend to clients. Every piece of guidance comes from real experience, not theory.",
+      "Lead research, outreach, content, client management. I use AI for all of it. So when I tell you what to implement, it's because I've already tested it with my own time and money.",
   },
   {
     geoVariant: "map" as const,
-    title: "A roadmap, not a sales pitch for tools.",
+    title: "Fewer tools, better results.",
     description:
-      "Most AI consultants push whatever tool they're partnered with. I start with your business goals and work backwards to find the right solutions, even if that means fewer tools, not more.",
+      "You don't need 12 subscriptions. Most businesses need 2 or 3 AI tools, set up correctly, doing the right things. I'll tell you which ones and why, even if the answer is \"the free version is fine.\"",
   },
   {
     geoVariant: "chat" as const,
-    title: "Business results, not tech jargon.",
+    title: "I speak revenue, not algorithms.",
     description:
-      "I don't lead with \"large language models.\" I lead with \"here's how you get three hours back every week\" and \"here's what that does to your bottom line.\"",
+      "You won't hear \"large language models\" from me. You'll hear \"this saves you 3 hours every week\" and \"this is what that does to your pipeline.\" Nearly 20 years of marketing means I start with the business outcome, always.",
   },
 ]
 
@@ -89,7 +89,7 @@ export default function About() {
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-navy leading-tight">
-              Your competitors are already using AI. Let&apos;s close the gap.
+              While you&apos;re figuring out AI, your competitors already have it working.
             </h2>
           </motion.div>
 
@@ -101,7 +101,7 @@ export default function About() {
             className="flex flex-col gap-4"
           >
             <p className="text-navy/65 leading-relaxed">
-              75% of small businesses are investing in AI, but most are grabbing tools without a strategy. They need an advisor who understands their world, not enterprise consultants repackaged with a smaller price tag.
+              83% of growing small businesses have already adopted AI. The ones falling behind? They&apos;re still Googling &ldquo;best AI tools&rdquo; and signing up for free trials they never use. The difference isn&apos;t the tools. It&apos;s having someone who knows which ones actually matter for your business.
             </p>
             <div className="flex gap-10 pt-3 border-t border-navy/8">
               {credentials.map((c) => (
