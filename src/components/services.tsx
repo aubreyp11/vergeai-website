@@ -83,7 +83,7 @@ export default function Services() {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy">
-            Find the right level of support.
+            Three ways to work together.
           </h2>
           <p className="mt-4 text-navy/65 max-w-xl mx-auto">
             Whether you want a fast strategy session or a full build-out, there&apos;s an engagement designed for where you are right now.
