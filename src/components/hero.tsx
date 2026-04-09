@@ -25,7 +25,7 @@ export default function Hero() {
             AI isn&apos;t just for big companies anymore.
           </h1>
           <p className="text-lg text-navy/70 leading-relaxed max-w-lg">
-            Verge AI helps small business owners cut through the noise and actually use AI to save time, grow revenue, and get back to the work that matters.
+            You don&apos;t need a tech team to use AI. You need a strategist who builds real systems for businesses like yours. That&apos;s what we do.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a

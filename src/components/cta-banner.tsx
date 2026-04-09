@@ -16,10 +16,10 @@ export default function CtaBanner() {
           className="max-w-3xl flex flex-col items-center gap-6"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
-            Curious where AI fits in your business?
+            Find out exactly where AI fits in your business.
           </h2>
           <p className="text-white/70 text-lg leading-relaxed">
-            It takes 2 minutes. Our AI Readiness Quiz gives you a personalized snapshot of your biggest opportunities, plus a clear next step.
+            2 minutes. 7 questions. You&apos;ll get a personalized snapshot of your biggest AI opportunities and a clear first step. No email required to start.
           </p>
           <a
             href="#quiz"

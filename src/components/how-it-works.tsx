@@ -8,21 +8,21 @@ const steps = [
     title: "Discover",
     color: "bg-navy",
     description:
-      "Take our free AI Readiness Quiz or book a discovery call. We\u2019ll figure out exactly where AI fits into what you\u2019re already doing, no jargon, no pressure.",
+      "Take our free AI Readiness Quiz or book a call. In minutes, we identify where AI saves you the most time and money.",
   },
   {
     number: "2",
     title: "Design",
     color: "bg-coral",
     description:
-      "Together, we map out a custom AI strategy built around your goals, your team, and your budget. Every recommendation is practical and specific to your business.",
+      "We build a custom AI roadmap around your goals, team size, and budget. Practical, specific, no fluff.",
   },
   {
     number: "3",
     title: "Deploy",
     color: "bg-teal",
     description:
-      "Whether you want guidance to implement on your own or a full done-for-you build, we get AI working inside your business so you see results, not just ideas.",
+      "You get guidance to implement yourself, or we build it for you. Either way, you see results, not just a plan.",
   },
 ]
 
