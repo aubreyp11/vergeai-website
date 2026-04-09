@@ -19,21 +19,27 @@ Landing page for Verge AI (vergeai.co). AI strategy consulting for small busines
 ## Brand Voice
 Warm, approachable, confident. No jargon. No corporate speak. No em dashes. Direct, conversational, never preachy.
 
-## External Links (update when available)
-- Quiz: Blueprint Quiz on Netlify (URL TBD, using #quiz placeholder)
-- Booking: Google Calendar appointment page (URL TBD, using #booking placeholder)
-- LinkedIn: (URL TBD, using #linkedin placeholder)
-- Email: aubrey@vergeai.co
+## Live URLs
+- **Site**: vergeai.co (DNS via Namecheap)
+- **Quiz**: blueprintquiz.vergeai.co
+- **Booking**: https://calendar.app.google/F31ojRqwc1cqmE5L7
+- **LinkedIn**: (still placeholder #linkedin, needs URL)
+- **Email**: aubrey@vergeai.co
+- **GitHub**: aubreyp11/vergeai-website (deploy via `npx vercel --prod`, auto-deploy not connected yet)
 
 ## Component Architecture
 All section components in src/components/ use default exports.
 Client components ("use client"): navbar, hero, how-it-works, services, about, cta-banner
 Server component: footer
 
+## Positioning
+Aubrey is a strategist/consultant/advisor. She does NOT position herself as a builder. Copy should reflect guidance, strategy, and advisory, not custom software development.
+
 ## Notes
-- Service packages are PLACEHOLDERS. Will be finalized after AI Consultant Certification.
+- Service packages are PLACEHOLDERS. Will be finalized after AI Consultant Certification (Industry Rockstar by Kane Minkus).
 - shadcn buttons use buttonVariants() with styled <a> tags (no asChild).
 - Colors defined in globals.css @theme inline block, not tailwind.config.ts.
+- CTA buttons are pill-shaped (rounded-full), large padding (px-8 py-4).
 
 ## DO NOT
 - Use DM Sans (old font, replaced by Figtree)
