@@ -123,7 +123,7 @@ export default function Services() {
                 ))}
               </ul>
               <a
-                href="#booking"
+                href="https://calendar.app.google/F31ojRqwc1cqmE5L7"
                 className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full w-full py-3 text-sm transition-colors"
               >
                 Book a Discovery Call

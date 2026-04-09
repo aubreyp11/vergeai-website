@@ -6,7 +6,7 @@ const exploreLinks = [
 
 const connectLinks = [
   { label: "LinkedIn", href: "#linkedin" },
-  { label: "Discovery Call", href: "#booking" },
+  { label: "Discovery Call", href: "https://calendar.app.google/F31ojRqwc1cqmE5L7" },
   { label: "aubrey@vergeai.co", href: "mailto:aubrey@vergeai.co" },
 ]
 
