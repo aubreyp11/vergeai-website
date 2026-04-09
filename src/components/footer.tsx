@@ -59,18 +59,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 pt-5 border-t border-navy/8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-5 border-t border-navy/8 flex items-center justify-center">
           <p className="text-xs text-navy/40">
             &copy; 2026 Verge AI. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-xs text-navy/40 hover:text-navy/70 transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-xs text-navy/40 hover:text-navy/70 transition-colors">
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>
