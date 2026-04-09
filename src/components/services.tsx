@@ -1,7 +1,6 @@
 "use client"
 
 import { motion, type Variants } from "framer-motion"
-import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const services = [
@@ -11,7 +10,8 @@ const services = [
     title: "AI Strategy Intensive (VIP Day)",
     duration: "Full Day",
     features: ["Workflow deep dive", "Custom AI roadmap", "Action plan in 1 week"],
-    accent: "border-navy/20",
+    topBorder: "bg-navy",
+    cardBg: "bg-white",
   },
   {
     tag: "Go Deeper",
@@ -23,8 +23,9 @@ const services = [
       "High-impact opportunity ID",
       "Clear implementation plan",
     ],
-    accent: "border-coral/20",
+    topBorder: "bg-coral",
     featured: true,
+    cardBg: "bg-gradient-to-br from-white via-white to-peach/40",
   },
   {
     tag: "Full Partnership",
@@ -36,16 +37,17 @@ const services = [
       "Vendor and tool selection guidance",
       "Full team training and adoption",
     ],
-    accent: "border-teal/20",
+    topBorder: "bg-teal",
+    cardBg: "bg-white",
   },
 ]
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 36 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.12, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.55, delay: i * 0.14, ease: [0.25, 0.1, 0.25, 1] },
   }),
 }
 
@@ -73,14 +75,14 @@ function CheckIcon() {
 
 export default function Services() {
   return (
-    <section id="services" className="bg-warm-white py-14 md:py-20">
+    <section id="services" className="bg-warm-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex items-baseline justify-between mb-10"
+          className="flex items-baseline justify-between mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy">
             Three ways to work together.
@@ -100,34 +102,37 @@ export default function Services() {
               viewport={{ once: true }}
               variants={cardVariants}
               className={cn(
-                "bg-white rounded-xl border p-6 flex flex-col gap-5",
-                s.accent,
-                s.featured ? "shadow-lg ring-1 ring-coral/20" : "shadow-sm"
+                "rounded-xl overflow-hidden flex flex-col",
+                s.featured ? "shadow-lg ring-1 ring-coral/15" : "shadow-sm"
               )}
             >
-              <div>
-                <span className={cn("text-xs font-semibold px-3 py-1 rounded-full", s.tagBg)}>
-                  {s.tag}
-                </span>
+              {/* Thin accent top border */}
+              <div className={cn("h-1 w-full", s.topBorder)} />
+              <div className={cn("flex flex-col gap-5 p-7 pb-8 flex-1", s.cardBg)}>
+                <div>
+                  <span className={cn("text-xs font-semibold px-3 py-1 rounded-full", s.tagBg)}>
+                    {s.tag}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-navy leading-snug">{s.title}</h3>
+                  <p className="mt-1 text-sm text-navy/50 font-medium">{s.duration}</p>
+                </div>
+                <ul className="flex flex-col gap-3 flex-1">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm text-navy/70">
+                      <CheckIcon />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="https://calendar.app.google/F31ojRqwc1cqmE5L7"
+                  className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full w-full py-3 text-sm transition-colors shadow-sm shadow-coral/10"
+                >
+                  Book a Discovery Call
+                </a>
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-navy leading-snug">{s.title}</h3>
-                <p className="mt-1 text-sm text-navy/50 font-medium">{s.duration}</p>
-              </div>
-              <ul className="flex flex-col gap-3 flex-1">
-                {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-navy/70">
-                    <CheckIcon />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://calendar.app.google/F31ojRqwc1cqmE5L7"
-                className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full w-full py-3 text-sm transition-colors"
-              >
-                Book a Discovery Call
-              </a>
             </motion.div>
           ))}
         </div>

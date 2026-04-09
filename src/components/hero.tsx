@@ -1,46 +1,94 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { buttonVariants } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-peach to-coral/20 py-16 md:py-20 overflow-hidden">
-      {/* Gradient blob — top-right */}
-      <div className="absolute -top-20 -right-20 w-72 h-72 bg-coral/15 rounded-full blur-3xl pointer-events-none" />
+    <section className="noise-overlay relative bg-gradient-to-br from-peach via-peach to-coral/20 py-24 md:py-32 overflow-hidden">
+      {/* Large decorative watermark */}
+      <div
+        aria-hidden="true"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none z-0"
+      >
+        <span className="text-[10rem] md:text-[16rem] lg:text-[20rem] font-extrabold text-navy/[0.04] leading-none tracking-tighter">
+          Verge
+        </span>
+      </div>
 
-      <div className="relative max-w-3xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="flex flex-col gap-5 items-center text-center"
-        >
-          <p className="text-xs font-semibold uppercase tracking-wider text-navy/60">
+      {/* Floating gradient orbs */}
+      <motion.div
+        aria-hidden="true"
+        className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-coral/15 blur-3xl pointer-events-none"
+        animate={{ x: [0, 20, 0], y: [0, -15, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="absolute -bottom-24 -left-16 w-64 h-64 rounded-full bg-teal/10 blur-3xl pointer-events-none"
+        animate={{ x: [0, -15, 0], y: [0, 20, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-navy/5 blur-2xl pointer-events-none"
+        animate={{ x: [0, 10, 0], y: [0, -10, 0], scale: [1, 1.1, 1] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <div className="relative z-10 max-w-3xl mx-auto px-6">
+        <div className="flex flex-col gap-6 items-center text-center">
+          {/* Kicker */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider text-navy/60"
+          >
+            <span className="inline-block w-2 h-2 rounded-full bg-coral" />
             AI Strategy for Small Business
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy leading-tight">
+          </motion.p>
+
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy leading-tight"
+          >
             AI isn&apos;t just for big companies anymore.
-          </h1>
-          <p className="text-lg text-navy/70 leading-relaxed max-w-xl">
+          </motion.h1>
+
+          {/* Body */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.24, ease: "easeOut" }}
+            className="text-lg text-navy/70 leading-relaxed max-w-xl"
+          >
             You don&apos;t need a tech team to use AI. You need a strategist who knows exactly where it fits in your business and how to make it work. That&apos;s what we do.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-2">
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.36, ease: "easeOut" }}
+            className="flex flex-wrap justify-center gap-4 pt-2"
+          >
             <a
               href="https://blueprintquiz.vergeai.co"
-              className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors"
+              className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors shadow-lg shadow-coral/20"
             >
               Get Your Free AI Blueprint
             </a>
             <a
               href="https://calendar.app.google/F31ojRqwc1cqmE5L7"
-              className="inline-flex items-center justify-center bg-warm-white/80 hover:bg-white text-navy font-semibold rounded-full px-8 py-4 text-base transition-colors"
+              className="inline-flex items-center justify-center bg-warm-white/80 hover:bg-white text-navy font-semibold rounded-full px-8 py-4 text-base transition-colors shadow-sm"
             >
               Book a Discovery Call
             </a>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

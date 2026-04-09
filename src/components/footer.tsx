@@ -12,12 +12,12 @@ const connectLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-warm-white border-t border-navy/5">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+    <footer className="bg-gradient-to-b from-warm-white to-[#f5f0ec] border-t border-navy/5">
+      <div className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-3 gap-10">
           {/* Col 1: Wordmark + tagline */}
           <div className="flex flex-col gap-4">
-            <p className="text-xl font-extrabold text-navy tracking-tight">Verge AI</p>
+            <p className="text-2xl font-extrabold text-navy tracking-tight">Verge AI</p>
             <p className="text-sm text-navy/55 leading-relaxed max-w-xs">
               Making AI accessible, ethical, and practical for small business owners who want to reclaim their time.
             </p>

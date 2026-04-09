@@ -1,9 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { buttonVariants } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 const navLinks = [
   { label: "How it Works", href: "#how-it-works" },
@@ -13,10 +11,23 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16)
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-50 bg-warm-white/90 backdrop-blur-md border-b border-navy/5">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+    <header
+      className={`sticky top-0 z-50 bg-warm-white/90 backdrop-blur-md border-b transition-shadow duration-300 ${
+        scrolled
+          ? "border-navy/8 shadow-[0_1px_12px_rgba(43,76,126,0.06)]"
+          : "border-navy/5 shadow-none"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Wordmark */}
         <a href="/" className="text-xl font-extrabold text-navy tracking-tight">
           Verge AI
@@ -35,7 +46,7 @@ export default function Navbar() {
           ))}
           <a
             href="https://blueprintquiz.vergeai.co"
-            className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors"
+            className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-6 py-2.5 text-sm transition-colors shadow-sm shadow-coral/10"
           >
             Get Your Blueprint
           </a>
