@@ -10,39 +10,33 @@ Landing page for Verge AI (vergeai.co). AI strategy consulting for small busines
 - Framer Motion for animations
 - Deployed on Vercel
 
-## Brand Block
-- **Palette:** Navy #2B4C7E, Coral #F06844, Teal #1A9E8F, Peach #FDDDD5, Warm White #FBF7F4
-- **Font:** Figtree only. 800 ExtraBold for H1, 700 Bold for H2, 600 SemiBold for H3/buttons, 400 Regular for body (1.7 line-height), 500 Medium uppercase for kickers/labels
-- **CTA buttons:** Coral background, white text, rounded-full, Figtree SemiBold
-- **Tailwind classes:** text-navy, bg-coral, bg-teal, bg-peach, bg-warm-white
+## Brand (see global CLAUDE.md for colors/font/positioning)
+- **Font weights**: 800 H1, 700 H2, 600 H3/buttons, 400 body (1.7 line-height), 500 uppercase kickers
+- **CTAs**: Coral bg, white text, rounded-full, SemiBold. Teal for secondary (waitlist).
+- **Tailwind**: text-navy, bg-coral, bg-teal, bg-peach, bg-warm-white
+- **Voice**: Warm, approachable, confident. No jargon, no em dashes.
 
-## Brand Voice
-Warm, approachable, confident. No jargon. No corporate speak. No em dashes. Direct, conversational, never preachy.
+## URLs & Deploy
+- Deploy: `npx vercel --prod` (GitHub auto-deploy not connected)
+- LinkedIn: still placeholder #linkedin (needs real URL)
 
-## Live URLs
-- **Site**: vergeai.co (DNS via Namecheap)
-- **Quiz**: blueprintquiz.vergeai.co
-- **Booking**: https://calendar.app.google/F31ojRqwc1cqmE5L7
-- **LinkedIn**: (still placeholder #linkedin, needs URL)
-- **Email**: aubrey@vergeai.co
-- **GitHub**: aubreyp11/vergeai-website (deploy via `npx vercel --prod`, auto-deploy not connected yet)
+## Environment
+- Env vars on Vercel: `NOTION_API_KEY`, `NOTION_LEADS_DB_ID`
+- Local: `.env.local` (gitignored)
+- Deploy: `npx vercel --prod` from project root
 
 ## Component Architecture
 All section components in src/components/ use default exports.
-Client components ("use client"): navbar, hero, how-it-works, services, about, cta-banner
-Server component: footer
+Client components ("use client"): navbar, hero, how-it-works, services, about, cta-banner, professionals-waitlist
+Server components: faq, footer
 
-## Positioning
-Aubrey is a strategist/consultant/advisor. She does NOT position herself as a builder. Copy should reflect guidance, strategy, and advisory, not custom software development.
+## Page Order (homepage)
+Hero → How It Works → Services → About → CTA Banner (quiz) → Professionals Waitlist → FAQ → Footer
+
+## API Routes
+- `POST /api/waitlist` — Professionals waitlist signup → Notion Leads Pipeline (Source: "waitlist")
 
 ## Notes
-- Service packages are PLACEHOLDERS. Will be finalized after AI Consultant Certification (Industry Rockstar by Kane Minkus).
 - shadcn buttons use buttonVariants() with styled <a> tags (no asChild).
 - Colors defined in globals.css @theme inline block, not tailwind.config.ts.
-- CTA buttons are pill-shaped (rounded-full), large padding (px-8 py-4).
-
-## DO NOT
-- Use DM Sans (old font, replaced by Figtree)
-- Use em dashes anywhere in copy
-- Include Human Design or consciousness framework language
-- Add features beyond what's in the spec without approval
+- Service packages are PLACEHOLDERS (see global CLAUDE.md for certification context).

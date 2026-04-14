@@ -1,0 +1,48 @@
+Verge AI — AI strategy consulting for women-led small businesses
+
+Verge AI helps small business owners cut through AI hype and actually use AI to save time, grow revenue, and get back to the work that matters. Every engagement ties AI decisions to measurable business outcomes: hours saved, costs reduced, revenue grown. Founded and run by Aubrey Perez, a digital media strategist with nearly 20 years in paid media and marketing technology. Based in British Columbia, Canada. Works with clients across North America.
+
+# Who Verge AI is for
+
+- Women-led small businesses (but open to all) who are overwhelmed by AI tools and want a plan
+- Service-based businesses and solo founders who need to free up 5 to 15 hours per week
+- Owners who want strategic guidance, not custom software development
+
+# What Verge AI does
+
+- AI strategy consulting: diagnose where AI fits in your business, build a roadmap
+- AI readiness audits: score your site, content, and systems for AI visibility (AEO and GEO)
+- Workflow automation guidance: identify the top 3 tasks to automate first
+- Agent and tool recommendations: match the right AI tool to the right workflow
+- Implementation support: guidance on executing the plan, not done-for-you development
+
+# What Verge AI does not do
+
+- Custom software development
+- Done-for-you AI model training
+- Monthly retainer agency work
+- Agency-style full-funnel marketing
+
+# Key Pages
+
+/ - Homepage with positioning, services overview, and booking CTA
+/services - Detail on AI strategy, audit, and advisory packages
+/about - Aubrey's background and why Verge AI exists
+/blueprint-quiz - 7-question quiz that surfaces the 3 best AI moves for your business (blueprintquiz.vergeai.co)
+
+# Key Resources
+
+- AI Visibility Scanner: https://aeo-scanner-eta.vercel.app (free tool that scores any site for ChatGPT, Claude, Perplexity, and Google AI Overview readiness)
+- Blueprint Quiz: https://blueprintquiz.vergeai.co (7-question diagnostic for small business owners)
+- Booking: https://calendar.app.google/F31ojRqwc1cqmE5L7
+
+# Contact
+
+Email: info@vergeai.co
+Website: https://vergeai.co
+LinkedIn: https://www.linkedin.com/in/aubreyperez11
+Location: British Columbia, Canada
+
+# About the founder
+
+Aubrey Perez is the founder of Verge AI. She spent nearly 20 years in paid media and digital marketing strategy before turning her focus to helping small business owners navigate AI. She enrolled in the Industry Rockstar AI Consultant Certification to formalize her expertise and ship real frameworks rather than recycled hype.

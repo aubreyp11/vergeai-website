@@ -1,4 +1,36 @@
+# Verge AI — open to all crawlers including AI platforms.
+# AEO matters: we explicitly allow every AI crawler so ChatGPT, Claude,
+# Perplexity, Google AI Overviews, and others can index this site.
+
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://vergeai.co/sitemap.xml
 Sitemap: https://www.vergeai.co/sitemap.xml

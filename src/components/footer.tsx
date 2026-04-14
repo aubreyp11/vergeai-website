@@ -5,9 +5,9 @@ const exploreLinks = [
 ]
 
 const connectLinks = [
-  { label: "LinkedIn", href: "#linkedin" },
   { label: "Discovery Call", href: "https://calendar.app.google/F31ojRqwc1cqmE5L7" },
-  { label: "aubrey@vergeai.co", href: "mailto:aubrey@vergeai.co" },
+  { label: "info@vergeai.co", href: "mailto:info@vergeai.co" },
+  { label: "@vergeai.co", href: "https://instagram.com/vergeai.co" },
 ]
 
 export default function Footer() {

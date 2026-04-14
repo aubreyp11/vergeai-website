@@ -2,11 +2,6 @@
 
 import { motion, type Variants } from "framer-motion"
 
-const credentials = [
-  { stat: "20", label: "years in digital marketing" },
-  { stat: "1-15", label: "person teams we serve" },
-]
-
 /* Abstract geometric accent shapes instead of emojis */
 function GeoAccent({ variant }: { variant: "compass" | "map" | "chat" }) {
   if (variant === "compass") {
@@ -103,14 +98,6 @@ export default function About() {
             <p className="text-navy/65 leading-relaxed">
               83% of growing small businesses have adopted AI. But most are using it without a strategy, signing up for tools they barely touch, solving the wrong problems first. The businesses pulling ahead aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
             </p>
-            <div className="flex gap-10 pt-3 border-t border-navy/8">
-              {credentials.map((c) => (
-                <div key={c.label}>
-                  <p className="text-3xl font-extrabold text-coral">{c.stat}</p>
-                  <p className="text-sm text-navy/55 mt-1">{c.label}</p>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
 
