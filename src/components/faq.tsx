@@ -17,7 +17,7 @@ export default function FAQ() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="noise-overlay relative bg-warm-white py-24 md:py-32"
+      className="noise-overlay relative bg-warm-white py-16 md:py-24"
     >
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-14">
