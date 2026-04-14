@@ -188,6 +188,18 @@ export default function ProfessionalsWaitlist() {
                 </>
               )}
             </div>
+
+            <p className="text-center text-sm text-navy/50 mt-5">
+              Not sure where to start?{" "}
+              <a
+                href="https://agentsquiz.vergeai.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal font-semibold hover:underline"
+              >
+                Find out which AI agent suits your work →
+              </a>
+            </p>
           </motion.div>
         </div>
       </div>
