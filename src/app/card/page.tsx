@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import fs from "fs"
+import path from "path"
 
 export const metadata: Metadata = {
   title: "Aubrey Perez — Verge AI",
@@ -7,18 +9,18 @@ export const metadata: Metadata = {
 
 const links = [
   {
-    label: "Visit vergeai.co",
-    href: "https://vergeai.co",
+    label: "See What AI Could Do for Your Business",
+    href: "https://leadintel.vergeai.co",
     style: "bg-coral text-white shadow-lg shadow-coral/20",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
   },
   {
-    label: "Take the AI Blueprint Quiz",
-    href: "https://blueprintquiz.vergeai.co",
+    label: "Which AI Agent Was Made for You?",
+    href: "https://agentsquiz.vergeai.co",
     style: "bg-teal text-white shadow-lg shadow-teal/20",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
@@ -27,8 +29,18 @@ const links = [
     ),
   },
   {
+    label: "Visit vergeai.co",
+    href: "https://vergeai.co",
+    style: "bg-white text-navy border border-navy/10 shadow-sm",
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    ),
+  },
+  {
     label: "Email Me",
-    href: "mailto:info@vergeai.co",
+    href: "mailto:aubrey@vergeai.co",
     style: "bg-white text-navy border border-navy/10 shadow-sm",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
@@ -48,14 +60,28 @@ const links = [
   },
 ]
 
+// Read logo at module scope; if the file is missing (fresh clone, bad deploy),
+// fall back to a VCF without the embedded photo rather than crashing the route.
+let logoBase64 = ""
+try {
+  logoBase64 = fs
+    .readFileSync(path.join(process.cwd(), "public/logo.png"))
+    .toString("base64")
+} catch (err) {
+  console.error("card/page: logo.png missing for VCF — proceeding without embedded photo:", err)
+}
+
+const PHOTO_LINE = logoBase64 ? `\nPHOTO;ENCODING=b;TYPE=PNG:${logoBase64}` : ""
+
 const VCF_DATA = `BEGIN:VCARD
 VERSION:3.0
 FN:Aubrey Perez
+N:Perez;Aubrey;;;
 ORG:Verge AI
 TITLE:AI Strategy Consultant
-EMAIL:info@vergeai.co
+EMAIL;TYPE=WORK:aubrey@vergeai.co
 URL:https://vergeai.co
-NOTE:AI strategy consulting for small businesses
+NOTE:AI strategy consulting for small businesses${PHOTO_LINE}
 END:VCARD`
 
 const vcfBase64 = Buffer.from(VCF_DATA).toString("base64")

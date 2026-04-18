@@ -31,9 +31,12 @@ export default function ProfessionalsWaitlist() {
         setEmail("")
         setName("")
       } else {
+        const bodyText = await res.text().catch(() => "")
+        console.error("Waitlist signup failed:", res.status, bodyText)
         setStatus("error")
       }
-    } catch {
+    } catch (err) {
+      console.error("Waitlist signup threw:", err)
       setStatus("error")
     }
   }
