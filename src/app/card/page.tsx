@@ -40,7 +40,7 @@ const links = [
   },
   {
     label: "Email Me",
-    href: "mailto:aubrey@vergeai.co",
+    href: "mailto:info@vergeai.co",
     style: "bg-white text-navy border border-navy/10 shadow-sm",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
@@ -60,15 +60,15 @@ const links = [
   },
 ]
 
-// Read logo at module scope; if the file is missing (fresh clone, bad deploy),
-// fall back to a VCF without the embedded photo rather than crashing the route.
+// Read a small (~80KB) photo for the vCard. The full 1MB logo.png bloats the
+// data: URI past 2MB after base64 expansion, which some mobile browsers cap.
 let logoBase64 = ""
 try {
   logoBase64 = fs
-    .readFileSync(path.join(process.cwd(), "public/logo.png"))
+    .readFileSync(path.join(process.cwd(), "public/vcard-photo.png"))
     .toString("base64")
 } catch (err) {
-  console.error("card/page: logo.png missing for VCF — proceeding without embedded photo:", err)
+  console.error("card/page: vcard-photo.png missing for VCF — proceeding without embedded photo:", err)
 }
 
 const PHOTO_LINE = logoBase64 ? `\nPHOTO;ENCODING=b;TYPE=PNG:${logoBase64}` : ""
@@ -79,7 +79,7 @@ FN:Aubrey Perez
 N:Perez;Aubrey;;;
 ORG:Verge AI
 TITLE:AI Strategy Consultant
-EMAIL;TYPE=WORK:aubrey@vergeai.co
+EMAIL;TYPE=WORK:info@vergeai.co
 URL:https://vergeai.co
 NOTE:AI strategy consulting for small businesses${PHOTO_LINE}
 END:VCARD`
