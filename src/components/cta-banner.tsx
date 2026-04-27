@@ -48,7 +48,7 @@ export default function CtaBanner() {
               Stop grabbing tools. Start with a strategy.
             </h2>
             <p className="text-white/70 leading-relaxed">
-              Answer 7 quick questions about how you run your business. You&apos;ll get a custom AI profile, your biggest time-saving opportunities, and a prioritized action plan. Takes 2 minutes. No email required to start.
+              Answer 7 quick questions about how you run your business. You&apos;ll get a custom AI profile, your biggest time-saving opportunities, and a prioritized action plan. Takes 2 minutes. We&apos;ll email your custom plan.
             </p>
             <a
               href="https://blueprintquiz.vergeai.co"
