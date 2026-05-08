@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 
 export const metadata: Metadata = {
-  title: "Aubrey Perez | Verge AI",
+  title: "Aubrey Perez",
   description: "AI Strategy Consultant. Connect with Aubrey Perez at Verge AI.",
 }
 

@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Verge AI | Pick your starting point",
+  title: "Pick your starting point",
   description: "AI strategy for small businesses and professionals. Take a quiz, scan your business, or scan your site for AI visibility.",
 }
 

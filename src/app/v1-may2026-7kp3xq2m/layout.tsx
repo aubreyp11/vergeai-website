@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Verge AI v1 (May 2026 snapshot)",
+  title: "v1 May 2026 Snapshot",
   description: "Frozen snapshot of vergeai.co prior to May 2026 copy revisions.",
   robots: {
     index: false,
