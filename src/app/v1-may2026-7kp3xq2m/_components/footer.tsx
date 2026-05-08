@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <p className="text-2xl font-extrabold text-navy tracking-tight">Verge AI</p>
             <p className="text-sm text-navy/55 leading-relaxed max-w-xs">
-              Making AI accessible and practical for small business owners and professionals who want to reclaim their time.
+              Making AI accessible, ethical, and practical for small business owners who want to reclaim their time.
             </p>
           </div>
 

@@ -77,7 +77,7 @@ export default function ProfessionalsWaitlist() {
             </h2>
 
             <p className="text-navy/60 leading-relaxed">
-              AI is changing what&apos;s possible for professionals. We&apos;re building a hands-on program to help you build, ship, and lead with the tools that matter most.
+              AI isn&apos;t replacing professionals. Professionals who use AI are replacing those who don&apos;t. We&apos;re building a hands-on program to help you master the tools that matter most.
             </p>
 
             <ul className="space-y-3 mt-1">

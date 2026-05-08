@@ -6,6 +6,15 @@ import { cn } from "@/lib/utils"
 const services = [
   {
     tag: "Start Here",
+    tagBg: "bg-navy/10 text-navy",
+    title: "AI Strategy Intensive (VIP Day)",
+    duration: "Full Day",
+    features: ["We audit where your time goes", "You get a custom AI roadmap", "Walk away with a plan you can act on in days"],
+    topBorder: "bg-navy",
+    cardBg: "bg-white",
+  },
+  {
+    tag: "Go Deeper",
     tagBg: "bg-coral/10 text-coral",
     title: "AI Strategy & Guidance",
     duration: "2-Week Engagement",
@@ -24,9 +33,9 @@ const services = [
     title: "Full AI Transformation Partnership",
     duration: "3-Month Minimum",
     features: [
-      "Direct access to your strategist throughout the engagement",
+      "Your dedicated AI advisor on speed dial",
       "Tool selection, setup guidance, vendor vetting",
-      "Hands-on guidance for you and your team as you adopt new tools",
+      "Your team trained and confident with AI",
     ],
     topBorder: "bg-teal",
     cardBg: "bg-white",
@@ -76,14 +85,14 @@ export default function Services() {
           className="flex items-baseline justify-between mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy">
-            Two ways to work together.
+            Three ways to work together.
           </h2>
           <a href="#services" className="hidden md:inline text-sm font-semibold text-coral hover:text-coral/80 transition-colors whitespace-nowrap">
             See Full Details &rarr;
           </a>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 items-stretch max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 items-stretch">
           {services.map((s, i) => (
             <motion.div
               key={s.title}

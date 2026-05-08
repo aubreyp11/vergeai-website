@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 
 export const metadata: Metadata = {
-  title: "Aubrey Perez — Verge AI",
+  title: "Aubrey Perez | Verge AI",
   description: "AI Strategy Consultant. Connect with Aubrey Perez at Verge AI.",
 }
 
@@ -81,7 +81,7 @@ ORG:Verge AI
 TITLE:AI Strategy Consultant
 EMAIL;TYPE=WORK:info@vergeai.co
 URL:https://vergeai.co
-NOTE:AI strategy consulting for small businesses${PHOTO_LINE}
+NOTE:AI strategy consulting for small businesses and professionals${PHOTO_LINE}
 END:VCARD`
 
 const vcfBase64 = Buffer.from(VCF_DATA).toString("base64")

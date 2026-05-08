@@ -45,7 +45,7 @@ export default function Hero() {
             className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider text-navy/60"
           >
             <span className="inline-block w-2 h-2 rounded-full bg-coral" />
-            AI Strategy & Solutions
+            AI Strategy for Small Business
           </motion.p>
 
           {/* Headline */}
@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy leading-tight"
           >
-            You don&apos;t need more AI tools. You need an AI strategy.
+            What if AI could give you 10 hours back every week?
           </motion.h1>
 
           {/* Body */}
@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.24, ease: "easeOut" }}
             className="text-lg text-navy/70 leading-relaxed max-w-xl"
           >
-            Most people are grabbing AI tools without a plan. The ones getting real results? They started with a strategy. We help you build one, so every AI decision ties back to saving time, cutting costs, or growing revenue.
+            Most small business owners are grabbing AI tools without a plan. The ones getting real results? They started with a strategy. We help you build one, so every AI decision ties back to saving time, cutting costs, or growing revenue.
           </motion.p>
 
           {/* CTAs */}
@@ -79,7 +79,7 @@ export default function Hero() {
               href="https://blueprintquiz.vergeai.co"
               className="inline-flex items-center justify-center bg-coral text-white hover:bg-coral/90 font-semibold rounded-full px-8 py-4 text-base transition-colors shadow-lg shadow-coral/20"
             >
-              What Can AI Do for Your Business?
+              See What AI Can Do for You
             </a>
             <a
               href="https://calendar.app.google/F31ojRqwc1cqmE5L7"

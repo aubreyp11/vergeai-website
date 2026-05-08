@@ -37,21 +37,21 @@ function GeoAccent({ variant }: { variant: "compass" | "map" | "chat" }) {
 const differentiators = [
   {
     geoVariant: "compass" as const,
-    title: "We run our business on AI. You'll get what actually works.",
+    title: "I run my business on AI. You'll get what actually works.",
     description:
-      "Lead research, outreach, content, client management. We use AI for all of it. So when we recommend something, it's because we've already tested it with our own time and money.",
+      "Lead research, outreach, content, client management. I use AI for all of it. So when I tell you what to implement, it's because I've already tested it with my own time and money.",
   },
   {
     geoVariant: "map" as const,
     title: "Fewer tools, better results.",
     description:
-      "You don't need 12 subscriptions. Most businesses need 2 or 3 AI tools, set up correctly, doing the right things. We'll tell you which ones and why, even if the answer is \"the free version is fine.\"",
+      "You don't need 12 subscriptions. Most businesses need 2 or 3 AI tools, set up correctly, doing the right things. I'll tell you which ones and why, even if the answer is \"the free version is fine.\"",
   },
   {
     geoVariant: "chat" as const,
-    title: "We speak revenue, not algorithms.",
+    title: "I speak revenue, not algorithms.",
     description:
-      "You won't hear \"large language models\" from us. You'll hear \"this saves you 3 hours every week\" and \"this is what that does to your pipeline.\" Nearly 20 years of marketing means we start with the business outcome, always.",
+      "You won't hear \"large language models\" from me. You'll hear \"this saves you 3 hours every week\" and \"this is what that does to your pipeline.\" Nearly 20 years of marketing means I start with the business outcome, always.",
   },
 ]
 
@@ -84,7 +84,7 @@ export default function About() {
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-navy leading-tight">
-              The businesses winning with AI started with a strategy, not a subscription.
+              While you&apos;re figuring out AI, your competitors already have it working.
             </h2>
           </motion.div>
 
@@ -96,7 +96,7 @@ export default function About() {
             className="flex flex-col gap-4"
           >
             <p className="text-navy/65 leading-relaxed">
-              Most small businesses are experimenting with AI right now. Tools they barely touch, problems solved in the wrong order, dashboards no one opens. The ones getting real results aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
+              83% of growing small businesses have adopted AI. But most are using it without a strategy, signing up for tools they barely touch, solving the wrong problems first. The businesses pulling ahead aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
             </p>
           </motion.div>
         </div>

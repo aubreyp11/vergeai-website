@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Verge AI — AI Strategy for Small Business",
+    default: "Verge AI | AI Strategy for Small Business",
     template: "%s | Verge AI",
   },
   description:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://vergeai.co",
   },
   openGraph: {
-    title: "Verge AI — AI Strategy for Small Business",
+    title: "Verge AI | AI Strategy for Small Business",
     description:
       "Verge AI helps small business owners cut through the noise and actually use AI to save time, grow revenue, and get back to the work that matters.",
     url: "https://vergeai.co",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Verge AI — AI Strategy for Small Business",
+    title: "Verge AI | AI Strategy for Small Business",
     description:
       "AI strategy consulting for small businesses ready to save time, grow revenue, and compete.",
   },
@@ -56,7 +56,6 @@ const STRUCTURED_DATA = [
     },
     areaServed: [
       { "@type": "Country", name: "Canada" },
-      { "@type": "Country", name: "United States" },
     ],
     knowsAbout: [
       "AI strategy",

@@ -42,7 +42,7 @@ export const HOMEPAGE_FAQS: readonly FAQ[] = [
   {
     question: "How long does it take to see results from AI consulting?",
     answer:
-      "Initial wins from workflow automation and AI tool adoption typically show up in four to eight weeks. Content and AI search visibility improvements usually land in ninety to one hundred and eighty days. Every engagement starts with milestones tied to your specific outcomes, so you can measure progress at each step.",
+      "Initial wins from workflow automation and AI tool adoption typically show up in four to eight weeks. Content and AI search visibility improvements usually land in ninety to one hundred and eighty days. Verge AI sets clear milestones at week four, week twelve, and month six so you can measure progress at each step.",
   },
   {
     question: "Is Verge AI for solo founders or teams with employees?",
@@ -62,6 +62,6 @@ export const HOMEPAGE_FAQS: readonly FAQ[] = [
   {
     question: "Where is Verge AI based and who does it serve?",
     answer:
-      "Verge AI is based in Metro Vancouver, British Columbia, and works with small businesses across Canada. Engagements are fully remote, with asynchronous Loom walkthroughs and scheduled video calls. The free AI Visibility Scanner and Blueprint Quiz are available to anyone, anywhere.",
+      "Verge AI is based in British Columbia, Canada and works with clients across Canada and the United States. Engagements are fully remote, with asynchronous Loom walkthroughs and scheduled video calls. The consulting methodology is built around North American small business realities, including Canadian tax context when relevant.",
   },
 ] as const;
