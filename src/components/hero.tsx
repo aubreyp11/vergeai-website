@@ -45,7 +45,7 @@ export default function Hero() {
             className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider text-navy/60"
           >
             <span className="inline-block w-2 h-2 rounded-full bg-coral" />
-            AI Strategy & Solutions
+            AI Strategy
           </motion.p>
 
           {/* Headline */}

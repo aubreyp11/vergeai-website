@@ -96,7 +96,7 @@ export default function About() {
             className="flex flex-col gap-4"
           >
             <p className="text-navy/65 leading-relaxed">
-              Most small businesses are experimenting with AI right now. Tools they barely touch, problems solved in the wrong order, dashboards no one opens. The ones getting real results aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
+              Most are experimenting with AI right now. Tools they barely touch, problems solved in the wrong order, dashboards no one opens. The ones getting real results aren&apos;t using more AI. They&apos;re using it strategically, with a clear plan tied to actual business outcomes.
             </p>
           </motion.div>
         </div>

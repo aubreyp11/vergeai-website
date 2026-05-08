@@ -24,7 +24,7 @@ const services = [
     title: "Full AI Transformation Partnership",
     duration: "3-Month Minimum",
     features: [
-      "Direct access to your strategist throughout the engagement",
+      "Direct access throughout the engagement",
       "Tool selection, setup guidance, vendor vetting",
       "Hands-on guidance for you and your team as you adopt new tools",
     ],
