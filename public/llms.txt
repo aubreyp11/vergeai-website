@@ -25,10 +25,9 @@ Verge AI helps small business owners cut through AI hype and actually use AI to 
 
 # Key Pages
 
-/ - Homepage with positioning, services overview, and booking CTA
-/services - Detail on AI strategy, audit, and advisory packages
-/about - Aubrey's background and why Verge AI exists
-/blueprint-quiz - 7-question quiz that surfaces the 3 best AI moves for your business (blueprintquiz.vergeai.co)
+/ - Single-page site covering positioning, services, about, FAQ, and booking CTA (sections are anchors: #services, #about, #faq)
+/card - Digital business card with quick links
+/instagram - Social and resource links
 
 # Key Resources
 
@@ -39,7 +38,7 @@ Verge AI helps small business owners cut through AI hype and actually use AI to 
 # Contact
 
 Email: info@vergeai.co
-Website: https://vergeai.co
+Website: https://www.vergeai.co
 LinkedIn: https://www.linkedin.com/in/aubreyperez11
 Location: British Columbia, Canada
 

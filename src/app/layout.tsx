@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   },
   description:
     "Verge AI helps small business owners cut through the noise and actually use AI to save time, grow revenue, and get back to the work that matters.",
-  metadataBase: new URL("https://vergeai.co"),
+  metadataBase: new URL("https://www.vergeai.co"),
   alternates: {
-    canonical: "https://vergeai.co",
+    canonical: "https://www.vergeai.co",
   },
   openGraph: {
     title: "Verge AI | AI Strategy for Small Business",
     description:
       "Verge AI helps small business owners cut through the noise and actually use AI to save time, grow revenue, and get back to the work that matters.",
-    url: "https://vergeai.co",
+    url: "https://www.vergeai.co",
     siteName: "Verge AI",
     locale: "en_CA",
     type: "website",
@@ -38,20 +38,20 @@ const STRUCTURED_DATA = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://vergeai.co/#organization",
+    "@id": "https://www.vergeai.co/#organization",
     name: "Verge AI",
     alternateName: "Verge AI Strategy",
-    url: "https://vergeai.co",
-    logo: "https://vergeai.co/images/verge-ai-logo.png",
+    url: "https://www.vergeai.co",
+    logo: "https://www.vergeai.co/logo.png",
     description:
       "Verge AI is an AI strategy consultancy helping small business owners use AI to save time, grow revenue, and get back to the work that matters. Founded by Aubrey Perez.",
     email: "info@vergeai.co",
     founder: {
       "@type": "Person",
-      "@id": "https://vergeai.co/#founder",
+      "@id": "https://www.vergeai.co/#founder",
       name: "Aubrey Perez",
       jobTitle: "Founder and AI Strategy Consultant",
-      worksFor: { "@id": "https://vergeai.co/#organization" },
+      worksFor: { "@id": "https://www.vergeai.co/#organization" },
       sameAs: ["https://www.linkedin.com/in/aubreyperez11"],
     },
     areaServed: [
@@ -70,12 +70,12 @@ const STRUCTURED_DATA = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://vergeai.co/#website",
-    url: "https://vergeai.co",
+    "@id": "https://www.vergeai.co/#website",
+    url: "https://www.vergeai.co",
     name: "Verge AI",
     description:
       "AI strategy consulting for small business owners who want to use AI to save time, grow revenue, and compete.",
-    publisher: { "@id": "https://vergeai.co/#organization" },
+    publisher: { "@id": "https://www.vergeai.co/#organization" },
     inLanguage: "en-CA",
   },
   {
@@ -86,7 +86,7 @@ const STRUCTURED_DATA = [
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://vergeai.co",
+        item: "https://www.vergeai.co",
       },
     ],
   },
